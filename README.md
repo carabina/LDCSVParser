@@ -1,3 +1,4 @@
+
 # CSVParser
 
 [![Build Status](https://travis-ci.org/russell-davis/LDCSVParser.svg?branch=master)](https://travis-ci.org/russell-davis/CSVParser)
@@ -8,6 +9,15 @@
 
 
 ___
+
+
+## Installation
+Clone the repo, open the project, and run. After successful run, navigate to the 'Products' folder and click and drag the framework to your projects directory.
+
+```swift
+import LDCSVParser
+```
+
 
 ## The Parser
 #### Create an instance of the parser using a string
