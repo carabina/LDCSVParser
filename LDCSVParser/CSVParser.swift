@@ -28,10 +28,7 @@ public class CSVParser {
     ///   - KeyedRows: An array of Dictionaries with the values of each row keyed to the header
     ///   - completion: Hands back an initialized array of custom objects
     public func build<T: Codable>(with KeyedRows: [[String: String]], completion: ([T])->()) throws {
-        guard let _ = T.self as? Codable else {
-            let fullName: String = String(describing: T.self)
-            throw CSVErrors.isNotCodeable(type: fullName)
-        }
+
         var objs: [T] = []
         for item in KeyedRows {
             let json = try! JSONEncoder().encode(item)
