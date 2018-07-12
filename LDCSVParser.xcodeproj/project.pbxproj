@@ -10,6 +10,10 @@
 		73E4320A20F729D200E4235C /* LDCSVParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E4320020F729D200E4235C /* LDCSVParser.framework */; };
 		73E4320F20F729D200E4235C /* LDCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4320E20F729D200E4235C /* LDCSVParserTests.swift */; };
 		73E4321120F729D200E4235C /* LDCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E4320320F729D200E4235C /* LDCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73E4321B20F7305F00E4235C /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321A20F7305F00E4235C /* CSVParser.swift */; };
+		73E4321D20F7306D00E4235C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321C20F7306D00E4235C /* StringExtension.swift */; };
+		73E4321F20F7307900E4235C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321E20F7307900E4235C /* Tests.swift */; };
+		73E4322120F7307D00E4235C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4322020F7307D00E4235C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		73E4320920F729D200E4235C /* LDCSVParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDCSVParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E4320E20F729D200E4235C /* LDCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDCSVParserTests.swift; sourceTree = "<group>"; };
 		73E4321020F729D200E4235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E4321A20F7305F00E4235C /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		73E4321C20F7306D00E4235C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		73E4321E20F7307900E4235C /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		73E4322020F7307D00E4235C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		73E4320220F729D200E4235C /* LDCSVParser */ = {
 			isa = PBXGroup;
 			children = (
+				73E4321A20F7305F00E4235C /* CSVParser.swift */,
+				73E4321C20F7306D00E4235C /* StringExtension.swift */,
 				73E4320320F729D200E4235C /* LDCSVParser.h */,
 				73E4320420F729D200E4235C /* Info.plist */,
 			);
@@ -81,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				73E4320E20F729D200E4235C /* LDCSVParserTests.swift */,
+				73E4321E20F7307900E4235C /* Tests.swift */,
+				73E4322020F7307D00E4235C /* Person.swift */,
 				73E4321020F729D200E4235C /* Info.plist */,
 			);
 			path = LDCSVParserTests;
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					73E431FF20F729D200E4235C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					73E4320820F729D200E4235C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4321D20F7306D00E4235C /* StringExtension.swift in Sources */,
+				73E4321B20F7305F00E4235C /* CSVParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4322120F7307D00E4235C /* Person.swift in Sources */,
 				73E4320F20F729D200E4235C /* LDCSVParserTests.swift in Sources */,
+				73E4321F20F7307900E4235C /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +356,7 @@
 		73E4321520F729D200E4235C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlukedavis.LDCSVParser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +383,7 @@
 		73E4321620F729D200E4235C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +409,7 @@
 		73E4321820F729D200E4235C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YV73283KH;
 				INFOPLIST_FILE = LDCSVParserTests/Info.plist;
@@ -407,6 +428,7 @@
 		73E4321920F729D200E4235C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YV73283KH;
 				INFOPLIST_FILE = LDCSVParserTests/Info.plist;
