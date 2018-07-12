@@ -30,7 +30,7 @@
 		73E4320020F729D200E4235C /* LDCSVParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LDCSVParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E4320320F729D200E4235C /* LDCSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCSVParser.h; sourceTree = "<group>"; };
 		73E4320420F729D200E4235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73E4320920F729D200E4235C /* LDCSVParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDCSVParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E4320920F729D200E4235C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E4320E20F729D200E4235C /* LDCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDCSVParserTests.swift; sourceTree = "<group>"; };
 		73E4321020F729D200E4235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E4321A20F7305F00E4235C /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				73E4320220F729D200E4235C /* LDCSVParser */,
-				73E4320D20F729D200E4235C /* LDCSVParserTests */,
+				73E4320D20F729D200E4235C /* Tests */,
 				73E4320120F729D200E4235C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				73E4320020F729D200E4235C /* LDCSVParser.framework */,
-				73E4320920F729D200E4235C /* LDCSVParserTests.xctest */,
+				73E4320920F729D200E4235C /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			path = LDCSVParser;
 			sourceTree = "<group>";
 		};
-		73E4320D20F729D200E4235C /* LDCSVParserTests */ = {
+		73E4320D20F729D200E4235C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				73E4320E20F729D200E4235C /* LDCSVParserTests.swift */,
@@ -95,7 +95,7 @@
 				73E4322020F7307D00E4235C /* Person.swift */,
 				73E4321020F729D200E4235C /* Info.plist */,
 			);
-			path = LDCSVParserTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +130,9 @@
 			productReference = 73E4320020F729D200E4235C /* LDCSVParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		73E4320820F729D200E4235C /* LDCSVParserTests */ = {
+		73E4320820F729D200E4235C /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73E4321720F729D200E4235C /* Build configuration list for PBXNativeTarget "LDCSVParserTests" */;
+			buildConfigurationList = 73E4321720F729D200E4235C /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				73E4320520F729D200E4235C /* Sources */,
 				73E4320620F729D200E4235C /* Frameworks */,
@@ -143,9 +143,9 @@
 			dependencies = (
 				73E4320C20F729D200E4235C /* PBXTargetDependency */,
 			);
-			name = LDCSVParserTests;
+			name = Tests;
 			productName = LDCSVParserTests;
-			productReference = 73E4320920F729D200E4235C /* LDCSVParserTests.xctest */;
+			productReference = 73E4320920F729D200E4235C /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 			projectRoot = "";
 			targets = (
 				73E431FF20F729D200E4235C /* LDCSVParser */,
-				73E4320820F729D200E4235C /* LDCSVParserTests */,
+				73E4320820F729D200E4235C /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -465,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73E4321720F729D200E4235C /* Build configuration list for PBXNativeTarget "LDCSVParserTests" */ = {
+		73E4321720F729D200E4235C /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73E4321820F729D200E4235C /* Debug */,
