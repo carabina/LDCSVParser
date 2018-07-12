@@ -2,7 +2,7 @@
 # CSVParser
 
 [![Build Status](https://travis-ci.org/russell-davis/LDCSVParser.svg?branch=master)](https://travis-ci.org/russell-davis/CSVParser)
-[![GitHub version](https://badge.fury.io/gh/russell-davis%2FLDCSVParser.svg)](https://badge.fury.io/gh/russell-davis%2FCSVParser)
+[![GitHub version](https://badge.fury.io/gh/russell-davis%2FLDCSVParser.svg)](https://badge.fury.io/gh/russell-davis%2FLDCSVParser)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 
