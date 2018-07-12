@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		73E4320A20F729D200E4235C /* LDCSVParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E4320020F729D200E4235C /* LDCSVParser.framework */; };
-		73E4320F20F729D200E4235C /* LDCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4320E20F729D200E4235C /* LDCSVParserTests.swift */; };
 		73E4321120F729D200E4235C /* LDCSVParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E4320320F729D200E4235C /* LDCSVParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73E4321B20F7305F00E4235C /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321A20F7305F00E4235C /* CSVParser.swift */; };
 		73E4321D20F7306D00E4235C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321C20F7306D00E4235C /* StringExtension.swift */; };
 		73E4321F20F7307900E4235C /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4321E20F7307900E4235C /* Tests.swift */; };
 		73E4322120F7307D00E4235C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4322020F7307D00E4235C /* Person.swift */; };
+		73E4322320F736AB00E4235C /* LDCSVParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4322220F736AA00E4235C /* LDCSVParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +31,12 @@
 		73E4320320F729D200E4235C /* LDCSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCSVParser.h; sourceTree = "<group>"; };
 		73E4320420F729D200E4235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E4320920F729D200E4235C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73E4320E20F729D200E4235C /* LDCSVParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDCSVParserTests.swift; sourceTree = "<group>"; };
 		73E4321020F729D200E4235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73E4321A20F7305F00E4235C /* CSVParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 		73E4321C20F7306D00E4235C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		73E4321E20F7307900E4235C /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		73E4322020F7307D00E4235C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		73E4322220F736AA00E4235C /* LDCSVParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDCSVParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				73E4320220F729D200E4235C /* LDCSVParser */,
-				73E4320D20F729D200E4235C /* Tests */,
+				73E4320D20F729D200E4235C /* LDCSVParserTests */,
 				73E4320120F729D200E4235C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,15 +87,15 @@
 			path = LDCSVParser;
 			sourceTree = "<group>";
 		};
-		73E4320D20F729D200E4235C /* Tests */ = {
+		73E4320D20F729D200E4235C /* LDCSVParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				73E4320E20F729D200E4235C /* LDCSVParserTests.swift */,
+				73E4322220F736AA00E4235C /* LDCSVParserTests.swift */,
 				73E4321E20F7307900E4235C /* Tests.swift */,
 				73E4322020F7307D00E4235C /* Person.swift */,
 				73E4321020F729D200E4235C /* Info.plist */,
 			);
-			path = Tests;
+			path = LDCSVParserTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E4322120F7307D00E4235C /* Person.swift in Sources */,
-				73E4320F20F729D200E4235C /* LDCSVParserTests.swift in Sources */,
+				73E4322320F736AB00E4235C /* LDCSVParserTests.swift in Sources */,
 				73E4321F20F7307900E4235C /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +291,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -347,6 +348,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
