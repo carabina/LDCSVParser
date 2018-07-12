@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CSVParser {
+public class CSVParser {
     /// The number of columns in the data
     private let columnCount: Int
     /// The headers from the data, an Array of String
